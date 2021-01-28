@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nysl.css"> 
+    <title>NYSL</title>
+</head>
+
+<body>
+    <header>
+      <figure class= "logo-superior">
+        <img src="imagenes/nysl_logo.png"  alt="logo de NYSL" id="logo" />
+      </figure>
+
+      <h1 id="principal-title" class="title">Northside Youth Soccer League</h1>
+    </header> 
+    
+    <main>
+       <h2 id="secundario-title" class="title">Ubicación de los Juegos</h2>
+
+       <aside class="Header_menu sombra-simple"> 
+         <nav class="menu">
+          <li class="item-menu"><a href="index.html">Home</a></li>
+          <li class="item-menu"><a href="reglas.html">Reglas</a></li>
+          <li class="item-menu"><a href="informacion.html">Información</a></li>
+          <li class="item-menu"><a href="formulario_inscrip.html">Inscripción</a></li>
+          <li class="item-menu"><a href="Acercade.html">Acerca de NYSL</a></li>
+          <li class="item-menu"><a href="contacto.html">Contacto</a></li>
+         </nav> 
+      </aside> 
+
+     
+      <script language="javascript">
+        var cParametro = location.search.substr(1);
+        var cRuta = cParametro.split("=");
+        cRuta= cRuta[1];
+          
+          document.writeln('<div class="central sombra-simple">');
+            document.writeln('<div class="reglas sombra-doble">');  
+            // document.writeln('<div style="width: 100%">');
+        document.writeln('<iframe width="100%" height="400" frameborder="5" scrolling="no" marginheight="0" marginwidth=""');    
+        document.writeln('src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=AJ%20'+cRuta+'&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">');
+        document.writeln('</iframe>');     
+         document.writeln('</div>');
+         document.writeln('</div>');
+        
+        
+         
+    
+      </script> 
+      
+    <!-- <div class="central sombra-simple">
+     <section class="reglas sombra-doble">
+        <p>
+          Please email us at <a href="mailto:nysl@chisoccer.org">nysl@chisoccer.org</a>
+        </p>   
+     </section> 
+    </div> -->
+
+    </main>
+    
+    <footer>
+
+    </footer>   
+        
+</body>
+</html>
